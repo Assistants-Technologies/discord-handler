@@ -1,15 +1,15 @@
 declare module 'discord-multi-handler' {
-    import { Collection, Client } from "discord.js";
+    import { Collection, Command } from 'discord.js';
 
     export class CommandHandler {
-        constructor(client: Client);
+        constructor(client: any);
 
         fetchCommands: (options: {
             directory: string
             singleFolder?: boolean
-        }) => Collection<string, Record<string, any>>;
+        }) => Collection<string, Command>
 
-        addCommand: (path: string) => void;
+        addCommand: (path: string) => void
 
         reloadCommand: (cmd: string) => {
             success: boolean,
@@ -18,23 +18,23 @@ declare module 'discord-multi-handler' {
     }
 
     export class EventHandler {
-        constructor(client: Client);
+        constructor(client: any)
 
         fetchEvents: (options: {
             directory: string
             singleFolder?: boolean
-        }) => void;
+        }) => void
     }
 
     export class FunctionHandler {
-        constructor(client: Client);
+        constructor(client: any)
 
         fetchFunctions: (options: { 
             directory: string
             singleFolder?: boolean 
             useAlt?: boolean 
             useFolder?: boolean  
-        }) => void;
+        }) => void
 
         reloadFunction: (options: { 
             func: string 
@@ -43,8 +43,8 @@ declare module 'discord-multi-handler' {
         }) => {
             success: boolean,
             error: string | false
-        };
+        }
     }
 
-    export function log(message: string): void;
+    export function log(msg: string): void
 }
