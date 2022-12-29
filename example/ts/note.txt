@@ -1,9 +1,0 @@
-Hi there!
-
-
-We were unable to make a working TypeScript example.
-If you manage to get it working, please open a pull request!
-
-
-Contact me @ Plain#4443
-https://discord.gg/assistants

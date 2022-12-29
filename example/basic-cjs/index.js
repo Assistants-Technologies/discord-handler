@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits } = require('discord.js');
+const { Client, GatewayIntentBits } = require('../../index'); // require the npm package instead
 const client = new Client({
     intents: [ // The intents below only work on v14 of discord.js
         GatewayIntentBits.Guilds,
