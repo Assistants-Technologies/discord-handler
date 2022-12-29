@@ -1,6 +1,6 @@
 {
   "name": "discord-multi-handler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A module for easily setting up a command, event and function handler for your discord.js bot!",
   "main": "index.js",
   "typings": ".d.ts",
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Assistants-Center/discord-handler#readme",
   "dependencies": {
-    "discord.js": "^14.7.1"
+    "discord.js": "^14.7.1",
+    "typescript": "^4.9.4"
   }
 }
