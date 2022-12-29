@@ -1,4 +1,4 @@
-const { CommandHandler, FunctionHandler, EventHandler } = require(`${__dirname}/../../`);
+const { CommandHandler, FunctionHandler, EventHandler } = require('discord-multi-handler');
 const { Client, GatewayIntentBits } = require('discord.js');
 
 const client = new Client({
