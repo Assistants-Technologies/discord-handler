@@ -1,0 +1,34 @@
+{
+  "name": "discord-multi-handler",
+  "version": "1.0.0",
+  "description": "A module for easily setting up a command, event and function handler for your discord.js bot!",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Assistants-Center/discord-handler.git"
+  },
+  "keywords": [
+    "discord",
+    "assistants",
+    "handler",
+    "commands",
+    "events",
+    "functions",
+    "bot"
+  ],
+  "author": "Assistants",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Assistants-Center/discord-handler/issues"
+  },
+  "homepage": "https://github.com/Assistants-Center/discord-handler#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  }
+}
