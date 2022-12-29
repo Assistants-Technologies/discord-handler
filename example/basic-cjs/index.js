@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits } = require('discord.js');
+const { Client, GatewayIntentBits } = require("discord.js");
 const client = new Client({
     intents: [ // The intents below only work on v14 of discord.js
         GatewayIntentBits.Guilds,
@@ -7,7 +7,7 @@ const client = new Client({
     ]
 });
 
-const { CommandHandler, EventHandler } = require('discord-multi-handler');
+const { CommandHandler, EventHandler } = require('../../index'); // require the npm package instead
 const commandHandler = new CommandHandler(client);
 const eventHandler = new EventHandler(client);
 

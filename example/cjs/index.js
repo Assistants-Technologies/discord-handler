@@ -1,4 +1,4 @@
-const { CommandHandler, FunctionHandler, EventHandler } = require('discord-multi-handler');
+const { CommandHandler, FunctionHandler, EventHandler } = require('../../index'); // require the npm package instead
 const { Client, GatewayIntentBits } = require('discord.js');
 
 const client = new Client({
